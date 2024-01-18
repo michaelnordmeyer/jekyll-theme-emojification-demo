@@ -1,0 +1,121 @@
+# Remove URL for GitHub Pages plugin
+url: https://jekyll-theme-emojification.michaelnordmeyer.com
+# baseurl: "" # The subpath of the site, e.g. /blog
+title: Jekyll Theme Emojification
+# Description is used for meta headers and feeds. Limit to 160 characters, if possible
+description: >-
+  A simple and minimal single-author theme with configurable big emoji as the header link, and configurable background colors, which can be chosen for each post or page
+
+## Jekyll build settings https://jekyllrb.com/docs/configuration/default/
+exclude: [CODE_OF_CONDUCT.md, jekyll-theme-emojification*, LICENSE, Rakefile.rb, README.md, repo-cards, TODO.md]
+ignore_theme_config: true # Since Jekyll 4.0, see: https://jekyllrb.com/docs/themes/#pre-configuring-theme-gems40, https://jekyllrb.com/docs/configuration/options/
+kramdown:
+  show_warnings: true
+  syntax_highlighter_opts:
+    disable: true
+liquid:
+  # Configure Liquid’s parser
+  error_mode: strict # default: warn
+  # Configure Liquid’s renderer
+  strict_filters: true # default: false
+  # strict_variables: true # default: false
+sass:
+  style: compressed
+strict_front_matter: true # default: false
+# remote_theme: michaelnordmeyer/jekyll-theme-emojification
+theme: jekyll-theme-emojification
+timezone: Europe/Berlin # default: local timezone
+
+## Custom settings used by plugins and the theme
+author:
+  name: Michael Nordmeyer
+  # email: xxx@example.com
+  uri: https://michaelnordmeyer.com/
+# date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
+lang: en-US # default: en
+# Social links are used in SEO meta headers
+social:
+  links:
+    - https://github.com/michaelnordmeyer
+    - https://www.linkedin.com/in/michaelnordmeyer
+    - https://www.xing.com/profile/Michael_Nordmeyer
+    - https://indieweb.social/@mnordmeyer
+title_separator: • # default: |
+## Custom theme settings
+favicon: /icon.webp # optional, but mandatory if favicon_dark is used, needs to be 180x180
+favicon_dark: /icon-dark.webp # optional, needs to be 180x180
+favicon_media_type: image/webp # mandatory, if favicon* is set
+## Custom theme settings to not overwrite anything from Jekyll or plugins
+theme_settings:
+  category_title_prefix: "Category: "
+  # error_page_description: "Error page" # default: Error page
+  icon: 🌳
+  # redirect_page_title: "Redirecting…" # default: Redirecting…
+  # redirect_page_description: "Redirect page" # default: 'Redirect page'
+  # show_excerpts is used to enable excerpts on index pages like home and categories
+  show_excerpts: true # default: false
+  theme_color: yellowgreen # default: _default-html (if this file is removed, there will be no default styling)
+
+## Plugin settings jekyll-feed
+feed:
+  # disable_in_development: true # default: false
+  hide_generator: true # default: false
+  # path: /feed.atom # default: /feed.xml
+  # path_xslt: /feed.xslt # default: /feed.xslt.xml
+  posts_limit: 1000 # default: 10
+  smartify_content: true # default: false
+
+## Plugin settings jekyll-last-modified-at
+# Takes git mtime before file mtime
+# Might fail on hosted site building. Mitigate with GitHub Action’s `fetch-depth: 0` or git's `Git fetch --unshallow &&` onto the build command
+last-modified-at:
+  date-format: "%Y-%m-%d" # default: "%d-%b-%y"
+
+## Plugin settings jekyll-title-from-headings
+# Supports `strip_title` in frontmatter
+titles_from_headings:
+  collections: true # default: false, has to be true to be applied to posts
+  # enabled: false # default: true
+  strip_title: true # default: false
+
+## https://jekyllrb.com/docs/configuration/front-matter-defaults/
+# Only works for all posts, but can work for a subset of pages
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project (allows globs, but is slow)
+      type: posts # type (optional): posts, pages, drafts, or any collection
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages # pages have permalink: /:path/:basename
+    values:
+      layout: page
+      permalink: /:path/:basename
+  - scope:
+      path: "category"
+      type: pages
+    values:
+      layout: category
+      permalink: /:path/:basename
+      sitemap: false
+  - scope:
+      path: "error"
+      type: pages
+    values:
+      layout: error
+      permalink: /:path/:basename
+      sitemap: false
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: defaults-test
+      type: pages
+    values:
+      excerpt: "A quick test to test _config.yml defaults."
+      icon: 🪽
+      layout: page
+      sitemap: false
+      theme_color: dodgerblue
