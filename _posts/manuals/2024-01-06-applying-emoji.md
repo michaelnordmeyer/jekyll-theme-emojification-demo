@@ -1,4 +1,5 @@
 ---
+title: Applying Emoji
 date: 2024-01-06 21:00 +0100
 excerpt: It’s just pasting an emoji in frontmatter.
 categories: Manuals
@@ -6,8 +7,6 @@ permalink: /manual/applying-emoji
 icon: 🤩
 theme_color: hotpink
 ---
-# Applying Emoji
-
 An emoji has to be declared in frontmatter's `icon` or `_config.yml`’s `icon`. It’s just pasting it at the right place. That’s it.
 
 This page’s relevant frontmatter:

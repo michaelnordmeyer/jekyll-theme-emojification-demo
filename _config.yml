@@ -71,13 +71,6 @@ feed:
 last-modified-at:
   date-format: "%Y-%m-%d" # default: "%d-%b-%y"
 
-## Plugin settings jekyll-title-from-headings
-# Supports `strip_title` in frontmatter
-titles_from_headings:
-  collections: true # default: false, has to be true to be applied to posts
-  # enabled: false # default: true
-  strip_title: true # default: false
-
 ## https://jekyllrb.com/docs/configuration/front-matter-defaults/
 # Only works for all posts, but can work for a subset of pages
 defaults:

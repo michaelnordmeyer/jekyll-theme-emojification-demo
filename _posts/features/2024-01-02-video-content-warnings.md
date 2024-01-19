@@ -1,4 +1,5 @@
 ---
+title: Video Content Warnings
 date: 2024-01-02 14:00 +0100
 excerpt: Post lists can have content warnings to hint privacy-violating video embeds.
 categories: Features
@@ -7,8 +8,6 @@ content_warnings: video
 icon: ⚠️
 theme_color: gold
 ---
-# Video Content Warnings
-
 If this page would have an video embed, the privacy of the users would have been violated, because they couldn’t make an informed decision to visit this page or not, because the embed was not visible before visiting this link.
 
 A `content_warnings: video` in a page’s frontmatter would display 📽️ after the link on the home page or category pages.

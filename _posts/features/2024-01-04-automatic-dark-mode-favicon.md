@@ -1,4 +1,5 @@
 ---
+title: Automatic Dark Mode Favicon
 date: 2024-01-04 16:00 +0100
 excerpt: There are favicons for light and dark mode, which switch automatically.
 categories: Features
@@ -7,8 +8,6 @@ permalink: /feature/automatic-dark-mode-favicon
 icon: 🌟
 theme_color: gold
 ---
-# Automatic Dark Mode Favicon
-
 Depending on the users computer settings, a light or dark variant is used as a favicon (currently not support by Safari). It’s always the light version for feeds and SEO tags. They are declared in the site’s `_config.yaml` including the media type and can be replaced by the site owner.
 
 This page’s relevant config:

@@ -21,7 +21,6 @@ group :jekyll_plugins do
   # gem "jekyll-remote-theme", "~> 0.4"
   gem "jekyll-sitemap", "~> 1.4.1.pre.mn"
   gem "jekyll-theme-emojification" # No GitHub Pages gem, needs jekyll-remote-theme
-  gem "jekyll-titles-from-headings", "~> 0.5.4.pre.mn"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

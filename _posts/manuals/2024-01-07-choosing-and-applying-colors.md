@@ -1,4 +1,5 @@
 ---
+title: Choosing and Applying Colors
 date: 2024-01-07 22:00 +0100
 excerpt: Only named colors and hex codes are supported
 categories: Manuals
@@ -6,8 +7,6 @@ permalink: /manual/choosing-and-applying-colors
 icon: 🎨
 theme_color: hotpink
 ---
-# Choosing and Applying Colors
-
 Applying different a different color is very simple. Just add `theme_color: hotpink` to the page’s frontmatter.
 
 This page’s relevant frontmatter:

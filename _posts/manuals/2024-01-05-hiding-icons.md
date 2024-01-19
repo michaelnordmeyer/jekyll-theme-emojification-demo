@@ -1,4 +1,5 @@
 ---
+title: Hiding Icons
 date: 2024-01-05 20:00 +0100
 excerpt: Hiding Icons is an option.
 categories: Manuals
@@ -7,8 +8,6 @@ hide_icon: true
 hide_list_icon: true
 theme_color: hotpink
 ---
-# Hiding Icons
-
 If an icon is not appropriate for a page, it can be hidden with `hide_icon: true` in the page's frontmatter.
 
 This page’s relevant frontmatter:

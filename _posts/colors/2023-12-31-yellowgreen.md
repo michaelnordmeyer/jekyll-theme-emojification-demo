@@ -1,4 +1,5 @@
 ---
+title: Tree on Yellowgreen
 date: 2023-12-31 17:00 +0100
 excerpt: These are the supported HTML tags, which will be generated from Markdown.
 categories: [Color-Coordinated, The Important Bits]
@@ -7,8 +8,6 @@ sitemap: false
 icon: 🌳
 theme_color: yellowgreen
 ---
-# Tree on Yellowgreen
-
 ## HTML5 Tags Supported by Markdown
 
 These are the supported HTML tags, which will be generated from Markdown.

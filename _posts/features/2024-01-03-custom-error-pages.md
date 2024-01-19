@@ -1,4 +1,5 @@
 ---
+title: Custom Error Pages
 date: 2024-01-03 15:00 +0100
 excerpt: Custom error pages can have custom emoji and colors.
 categories: Features
@@ -7,8 +8,6 @@ permalink: /feature/custom-error-pages
 icon: 🎏
 theme_color: gold
 ---
-# Custom Error Pages
-
 There are some default custom error pages, like [403](/error/403), [404](/error/404), [410](/error/410), [418](/error/418), [429](/error/429), [451](/error/451), or [503](/error/503), which all can have custom emoji and colors. If no icon is set, the site’s default icon is used, like always. A great way to use funny emoji.
 
 The web server has to be configured to return those files for each error state, which a Jekyll theme cannot do. Managed hosting is not enough, self hosting will do the trick. On nginx, the following declared in the site’s server block will do the trick:

@@ -1,12 +1,11 @@
 ---
+title: The Result of my-color.scss
 excerpt: The result of creating our own color
 permalink: /my-color
 sitemap: false
 icon: 😎
 theme_color: my-color
 ---
-# The Result of my-color.scss
-
 This page’s relevant frontmatter:
 
 ```yaml
