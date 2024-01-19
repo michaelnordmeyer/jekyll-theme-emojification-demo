@@ -58,4 +58,4 @@ Those additional features can be installed by copying the [demo content’s](htt
 
 ## Color and Emoji Configuration
 
-If the process of declaring all those colors and icons described below seems tedious, there’s [Jekyll’s frontmatter defaults](/defaults-test/dodgerblue).
+If the process of declaring all those colors and icons described in the posts below seems tedious, there’s [Jekyll’s frontmatter defaults](/defaults-test/dodgerblue).
