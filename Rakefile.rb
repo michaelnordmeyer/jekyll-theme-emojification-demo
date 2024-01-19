@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 ## Deployment settings
-artefact = "jekyll-theme-emojification"
-domain = "#{artefact}.michaelnordmeyer.com"
+domain = "jekyll-theme-emojification.michaelnordmeyer.com"
 ssh_domain = "michaelnordmeyer.com"
 ssh_port = 1111
 ssh_user = "root"
@@ -10,16 +9,22 @@ ssh_path = "/var/www/#{domain}/"
 
 task :default => ["build"]
 
+desc "Generate previews"
+task :generate do
+  puts "==> Generating previews for #{domain}..."
+  system "./generate-previews.sh"
+end
+
 desc "Builds the site for deployment"
 task :build do
   puts "==> Building #{domain}..."
-  system "./generate-previews.sh && bundle exec jekyll build"
+  system "bundle exec jekyll build"
 end
 
 desc "Serves the site locally"
 task :serve do
   puts "==> Building and serving #{domain} locally..."
-  system "./generate-previews.sh && bundle exec jekyll serve"
+  system "bundle exec jekyll serve"
 end
 
 desc "Deploys the content of ./_site to the server via rsync"
