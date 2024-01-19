@@ -14,6 +14,8 @@ The main idea of [Jekyll Theme Emojification](https://github.com/michaelnordmeye
 
 It uses only a single color, the background color, and uses only white and black for the text on the page. White for headings 1 to 3, black for the rest. Links are in the same color as the black body text, but underlined in white. Visited links are underlined in black. Especially saturated colors work well with the white and black text.
 
+And if that much color is not your thing but you like the rest, there is a black and a white variant.
+
 ## Previews
 
 This demo has two categories having each the same style. [Features in gold](/category/features) and [manuals in hotpink](/category/manuals), while the rest of the site is in yellowgreen.
@@ -37,9 +39,9 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 - Posts
 - Pages
 - Fancy category pages (also on GitHub Pages, where additional plugins are not allowed)
+- A styled redirection page, which will be used by the optional plugin [Jekyll Redirect From](https://github.com/jekyll/jekyll-redirect-from)
 - An optional [colorful index](/index-colorful)
 - Header images
-- A styled redirection page, which will be used by the optional plugin [Jekyll Redirect From](https://github.com/jekyll/jekyll-redirect-from)
 - Optional excerpts in feed, SEO tags, and on category and home pages
 - Content warnings for embedded videos
 - Hidden semantic info for embedding and SEO like [Open Graph](https://ogp.me/), [JSON-LD](https://json-ld.org/), and inline [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)). No need for the `jekyll-seo-tag` plugin
