@@ -52,6 +52,9 @@ theme_settings:
   icon: 🌳
   # redirect_page_title: "Redirecting…" # default: Redirecting…
   # redirect_page_description: "Redirect page" # default: 'Redirect page'
+  # redirect_page_from: "Redirect from" # default: 'Redirect from'
+  # redirect_page_to: "to" # default: 'to'
+  # redirect_page_text: "Click here if you are not being redirected." # default: 'Click here if you are not being redirected.'
   # show_excerpts is used to enable excerpts on index pages like home and categories
   show_excerpts: true # default: false
   theme_color: yellowgreen # default: _default-html (if this file is removed, there will be no default styling)
