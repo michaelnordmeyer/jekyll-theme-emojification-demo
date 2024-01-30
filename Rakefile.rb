@@ -15,10 +15,16 @@ task :generate do
   system "./generate-previews.sh"
 end
 
-desc "Builds the site for deployment"
+desc "Builds the site"
 task :build do
   puts "==> Building #{domain}..."
   system "bundle exec jekyll build"
+end
+
+desc "Builds the site for production"
+task :build_prod do
+  puts "==> Building #{domain} for production..."
+  system "JEKYLL_ENV=\"production\" bundle exec jekyll build"
 end
 
 desc "Serves the site locally"

@@ -58,7 +58,7 @@ theme_settings:
 
 ## Plugin settings jekyll-feed
 feed:
-  # disable_in_development: true # default: false
+  disable_in_development: true # default: false
   hide_generator: true # default: false
   # path: /feed.atom # default: /feed.xml
   # path_xslt: /feed.xslt # default: /feed.xslt.xml
