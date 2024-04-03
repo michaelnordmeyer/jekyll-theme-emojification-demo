@@ -19,6 +19,7 @@ desc "Builds the site"
 task :build do
   puts "==> Building #{domain}..."
   system "JEKYLL_ENV=\"production\" bundle exec jekyll build"
+  system "cat ../../../michaelnordmeyer.com/robots.txt >> _site/robots.txt"
 end
 
 desc "Serves the site locally"
@@ -30,7 +31,7 @@ end
 desc "Deploys the content of ./_site to the server via rsync"
 task :rsync do
   puts "==> Rsyncing #{domain}'s content to SSH host #{ssh_domain}"
-  system "rsync -e 'ssh -p 1111' -vcrlptDSWhP --delete --rsync-path 'sudo -u root rsync' --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
+  system "rsync -e 'ssh -p 1111' -vcrlptDShP --delete --rsync-path 'sudo -u root rsync' --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
     --exclude=.DS_Store \
     --exclude=._* \
     --exclude=.git \
