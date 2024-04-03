@@ -23,9 +23,4 @@ The contents of `assets/css/my-color.scss`
   --bg-color: hsl(330, 100%, 81%);
   --pre-bg-color: hsl(330, 100%, 76%);
 }
-
-::selection {
-  background-color: var(--link-color);
-  color: var(--h-color);
-}
 ```
