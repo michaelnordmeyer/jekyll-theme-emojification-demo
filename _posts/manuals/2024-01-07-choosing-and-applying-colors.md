@@ -39,11 +39,6 @@ This page’s `hotpink.scss`:
   --bg-color: hsl(330, 100%, 71%);
   --pre-bg-color: hsl(330, 100%, 66%);
 }
-
-::selection {
-  background-color: var(--link-color);
-  color: var(--h-color);
-}
 ```
 
 For a style with saturated colors, only `--bg-color` and `--pre-bg-color` have to be changed.
