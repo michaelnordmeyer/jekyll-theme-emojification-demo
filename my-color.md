@@ -20,7 +20,7 @@ The contents of `assets/css/my-color.scss`
 @import "black-white";
 
 :root {
-  --bg-color: hsl(330, 100%, 81%);
-  --pre-bg-color: hsl(330, 100%, 76%);
+  --bg-color: hsl(330 100% 81%);
+  --pre-bg-color: hsl(330 100% 76%);
 }
 ```

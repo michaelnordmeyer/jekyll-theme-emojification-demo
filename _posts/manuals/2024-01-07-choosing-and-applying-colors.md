@@ -36,8 +36,8 @@ This page’s `hotpink.scss`:
 @import "black-white";
 
 :root {
-  --bg-color: hsl(330, 100%, 71%);
-  --pre-bg-color: hsl(330, 100%, 66%);
+  --bg-color: hsl(330 100% 71%);
+  --pre-bg-color: hsl(330 100% 66%);
 }
 ```
 
