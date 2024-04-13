@@ -35,6 +35,7 @@ author:
 cache_buster: true # default: false
 # date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
 lang: en-US # default: en
+# minify: true # default: false
 # Social links are used in SEO meta headers
 social:
   links:
@@ -58,7 +59,7 @@ theme_settings:
   # show_excerpts is used to enable excerpts on index pages like home and categories
   show_excerpts: true # default: false
   theme_color: yellowgreen # default: none (= no colors. If this file is missing, there will be also no structural styling)
-  # webmention_url: https://example.com/ # default: empty
+  webmention_url: https://webmention.io/jekyll-theme-emojification.michaelnordmeyer.com/webmention # default: empty
 
 ## Plugin settings jekyll-feed
 feed:
@@ -75,6 +76,10 @@ feed:
 # Might fail on hosted site building. Mitigate with GitHub Action’s `fetch-depth: 0` or git's `Git fetch --unshallow &&` onto the build command
 last-modified-at:
   date-format: "%Y-%m-%d" # default: "%d-%b-%y"
+
+## Plugin settings jekyll-seo-tag
+# tagline:
+logo: /icon.webp
 
 ## https://jekyllrb.com/docs/configuration/front-matter-defaults/
 # Only works for all posts, but can work for a subset of pages
