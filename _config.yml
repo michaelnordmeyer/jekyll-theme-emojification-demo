@@ -49,7 +49,6 @@ favicon_media_type: image/webp # mandatory, if favicon* is set
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
 theme_settings:
   category_title_prefix: "Category: "
-  # error_page_description: "Error Page" # default: Error page
   icon: 🌳
   # redirect_page_title: "Redirecting…" # default: Redirecting…
   # redirect_page_description: "Redirect Page" # default: 'Redirect Page'
