@@ -31,6 +31,7 @@ author:
   name: Michael Nordmeyer
   # email: xxx@example.com
   uri: https://michaelnordmeyer.com/
+  copyright: true # default: false
 cache_buster: true # default: false
 # date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
 lang: en-US # default: en
@@ -57,9 +58,11 @@ theme_settings:
   # show_excerpts is used to enable excerpts on index pages like home and categories
   show_excerpts: true # default: false
   theme_color: yellowgreen # default: none (= no colors. If this file is missing, there will be also no structural styling)
+  # webmention_url: https://example.com/ # default: empty
 
 ## Plugin settings jekyll-feed
 feed:
+  copyright: Copyright © Michael Nordmeyer # default: empty
   disable_in_development: true # default: false
   hide_generator: true # default: false
   # path: /feed.atom # default: /feed.xml
