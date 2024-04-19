@@ -45,9 +45,7 @@ social:
     - https://indieweb.social/@mnordmeyer
 title_separator: • # default: |
 ## Custom theme settings
-favicon: /icon.webp # optional, but mandatory if favicon_dark is used, needs to be 180x180
-favicon_dark: /icon-dark.webp # optional, needs to be 180x180
-favicon_media_type: image/webp # mandatory, if favicon* is set
+favicon: /assets/icons/yellowgreen.webp # optional, is used by the Atom feed
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
 theme_settings:
   category_title_prefix: "Category: "
@@ -79,7 +77,7 @@ last-modified-at:
 
 ## Plugin settings jekyll-seo-tag
 # tagline:
-logo: /icon.webp
+logo: /assets/icons/yellowgreen.webp
 
 ## https://jekyllrb.com/docs/configuration/front-matter-defaults/
 # Only works for all posts, but can work for a subset of pages

@@ -60,3 +60,7 @@ For hex codes like `#c34cff`, the file has to be named `c34cff.scss` *without* t
 But in frontmatter, the color has to be declared with the hash and in quotes, like `theme_color: "#c34cff"`.
 
 Other ways of expressing HMTL colors are not supported, because the file naming and application in a page’s meta tags becomes cumbersome.
+
+### Favicons
+
+[Favicons should reflect the theme color](/feature/theme-colored-favicons).

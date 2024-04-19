@@ -77,9 +77,9 @@ The emphasize tag should *italicize* text.
 
 ### Image Tag
 
-The image tag will show the image of `icon.webp`, if it exists:
+The image tag will show the image of `/assets/icons/yellowgreen.webp`, if it exists:
 
-![Image Alt Text](icon.webp "Image Title Text")
+![Image Alt Text](/assets/icons/yellowgreen.webp "Image Title Text")
 
 ### Pre-Formatted Tag
 

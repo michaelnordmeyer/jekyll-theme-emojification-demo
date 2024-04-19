@@ -35,7 +35,9 @@ Used categories have to be linked manually, because there is no menu.
 
 ### Favicons
 
-`icon.webp` is the favicon for the light mode, and there's also a dark variant `icon-dark.webp` for dark mode. The icons are also used in embedding and SEO headers of pages. If the `jekyll-feed` plugin is used, the light version is embedded there as well.
+There can be several favicons for a site running this theme, because it is possible to use different background colors, and the favicon should reflect the color theme. But there is also a site-wide favicon, which should reflect the style of the home page, and is used in the Atom feed.
+
+Icons should be named `<color>.webp`, be in `webp` format at 180×180 resolution, and be located in `/assets/icons/`. [Theme-matching icons can be easily generated from Unicode glyphs](https://michaelnordmeyer.com/generating-favicons-from-unicode-glyphs), if custom colors are used. Icons for the default theme colors are included.
 
 ### Styled Atom Feed and Sitemap
 
