@@ -31,7 +31,8 @@ author:
   name: Michael Nordmeyer
   # email: xxx@example.com
   uri: https://michaelnordmeyer.com/
-  copyright: true # default: false
+  copyright: Copyright © Michael Nordmeyer
+  license_link: https://raw.githubusercontent.com/michaelnordmeyer/jekyll-theme-emojification/main/LICENSE
 cache_buster: true # default: false
 # date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
 lang: en-US # default: en
@@ -61,7 +62,6 @@ theme_settings:
 
 ## Plugin settings jekyll-feed
 feed:
-  copyright: Copyright © Michael Nordmeyer # default: empty
   disable_in_development: true # default: false
   hide_generator: true # default: false
   # path: /feed.atom # default: /feed.xml
