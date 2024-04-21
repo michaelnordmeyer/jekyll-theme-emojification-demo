@@ -4,7 +4,7 @@ A demo site for [Jekyll Theme Emojification](https://github.com/michaelnordmeyer
 
 [Demo](https://jekyll-theme-emojification.michaelnordmeyer.com/)
 
-This demo shows several different color combinations and index page styles. Features, manuals, and sample colors are created as posts.
+This demo shows several different color combinations and index page styles. Features, manuals, and sample colors are created as posts. Additional information can be found in the [theme's readme](https://github.com/michaelnordmeyer/jekyll-theme-emojification).
 
 ## Additional Features
 
