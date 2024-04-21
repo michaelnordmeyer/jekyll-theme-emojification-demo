@@ -20,6 +20,7 @@ group :jekyll_plugins do
   # gem "jekyll-last-modified-at", "~> 1.3" # No GitHub Pages gem
   # gem "jekyll-remote-theme", "~> 0.4"
   gem "jekyll-sitemap", "~> 1.4.1.pre.mn"
+  gem "jekyll-seo-tag", "~> 3.0.0.pre.mn"
   gem "jekyll-theme-emojification" # No GitHub Pages gem, needs jekyll-remote-theme
 end
 

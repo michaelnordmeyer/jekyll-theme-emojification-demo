@@ -51,7 +51,7 @@ To have a defined color in frontmatter's `theme_color` or `_config.yml`’s `the
 
 ### Named Colors
 
-For named colors like “hotpink“, the file has to be named `hotpink.scss`. Create a folder called `assets` in your site’s root folder, and a subfolder called `css`. In there create a file called `my-color.scss` for example. Change the hotpink’s `71%` to `81%` and the `66%` to`76%`. You can [see the result for my-color here](/my-color).
+For named colors like “hotpink“, the file has to be named `hotpink.scss`. Create a directory called `assets` in your site’s root directory, and a subdirectory called `css`. In there create a file called `my-color.scss` for example. Change the hotpink’s `71%` to `81%` and the `66%` to`76%`. You can [see the result for my-color here](/my-color).
 
 ### Hex Colors
 
