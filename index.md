@@ -49,14 +49,15 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 
 ## Additional Features
 
-Some features cannot applied automatically due to how Jekyll integrates remote themes. They have to be copied manually.
+Some features cannot applied automatically due to how Jekyll integrates remote themes.
 
+- Category pages
 - Custom error pages
 - An [in-browser styled Atom feed](/feed.xml) through a feed XSLT, which is automatically applied by the `jekyll-feed` plugin. It educates people about feeds.
-- An in-browser styled sitemap.xml through a sitemap XSLT, which is automatically applied by the `jekyll-sitemap` plugin. Probably only the site owner might look at it every once in a while.
+- An [in-browser styled sitemap](/sitemap.xml) through a sitemap XSLT, which is automatically applied by the `jekyll-sitemap` plugin. Probably only the site owner might look at it every once in a while.
 
-Those additional features can be installed by copying the [demo content’s](https://github.com/michaelnordmeyer/jekyll-theme-emojification-demo) `error` folder, `feed.xslt.xml`, and `sitemap.xsl` to your site’s root folder. Only the custom error pages need to be edited, if you want to (color, emoji, title, permalink, maybe extra textual content).
+Those additional features can be installed by copying the [demo content’s](https://github.com/michaelnordmeyer/jekyll-theme-emojification-demo) `category` folder,  `error` folder, `feed.xslt.xml`, and `sitemap.xsl` to your site’s root folder. Only the categories and custom error pages need to be edited, if you want to (category name, color, emoji, title, permalink, maybe extra textual content).
 
 ## Color and Emoji Configuration
 
-If the process of declaring all those colors and icons described in the posts below seems tedious, there’s [Jekyll’s frontmatter defaults](/defaults-test/dodgerblue).
+If the process of declaring all those colors and icons described in the posts below seems tedious, there’s [Jekyll’s frontmatter defaults](/defaults-test/dodgerblue) to avoid duplication.

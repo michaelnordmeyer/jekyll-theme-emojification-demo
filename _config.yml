@@ -51,14 +51,14 @@ favicon: /assets/icons/yellowgreen.webp # optional, is used by the Atom feed
 theme_settings:
   category_title_prefix: "Category: "
   icon: 🌳
-  # redirect_page_title: "Redirecting…" # default: Redirecting…
-  # redirect_page_from: "Redirecting from" # default: 'Redirecting from'
-  # redirect_page_to: "to" # default: 'to'
-  # redirect_page_text: "Click here if you are not being redirected." # default: 'Click here if you are not being redirected.'
+  # redirect_page_title: "Redirecting…" # default: "Redirecting…"
+  # redirect_page_from: "Redirecting from" # default: "Redirecting from"
+  # redirect_page_to: "to" # default: "to"
+  # redirect_page_text: "Click here if you are not being redirected." # default: "Click here if you are not being redirected.""
   # show_excerpts is used to enable excerpts on index pages like home and categories
   show_excerpts: true # default: false
-  theme_color: yellowgreen # default: none (= no colors. If this file is missing, there will be also no structural styling)
-  webmention_url: https://webmention.io/jekyll-theme-emojification.michaelnordmeyer.com/webmention # default: empty
+  theme_color: yellowgreen # default: none (= no colors. If this CSS file is missing, there will be also no structural styling)
+  webmention_url: https://webmention.io/jekyll-theme-emojification.michaelnordmeyer.com/webmention
 
 ## Plugin settings jekyll-feed
 feed:
