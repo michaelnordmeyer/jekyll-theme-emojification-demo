@@ -55,7 +55,7 @@ For named colors like “hotpink“, the file has to be named `hotpink.scss`. Cr
 
 ### Hex Colors
 
-For hex codes like `#c34cff`, the file has to be named `c34cff.scss` *without* the preceding hash. That’s because Jekyll excludes file starting with a hash from its build process. And because file names can be case-sensitive, the code should always be lower-case.
+For hex codes like `#c34cff`, the file has to be named `c34cff.scss` without the preceding hash. That’s because Jekyll excludes file starting with a hash from its build process. And because file names can be case-sensitive, the code should always be lower-case.
 
 But in frontmatter, the color has to be declared with the hash and in quotes, like `theme_color: "#c34cff"`.
 
