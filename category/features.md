@@ -4,4 +4,4 @@ excerpt: "Category: Features"
 icon: 💐
 theme_color: gold
 ---
-The colorful index is off. All posts belonging to this category have the same theme color, which is not displayed, because the default theme color is used for the post list.
+The colorful index is off. All posts belonging to this category have the same theme color, which is set as the theme color for this category page as well.

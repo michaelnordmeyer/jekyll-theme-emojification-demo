@@ -18,7 +18,7 @@ And if that much color is not your thing but you like the rest, there is a black
 
 ## Previews
 
-This demo has two categories having each the same style. [Features in gold](/category/features) and [manuals in hotpink](/category/manuals), while the rest of the site is in yellowgreen.
+This demo has two categories each having the same style. [Features in gold](/category/features) and [manuals in hotpink](/category/manuals), while the rest of the site is in yellowgreen.
 
 In the [posts from 2023 below](#2023) are a variety of color-matching emoji. Matching was done with Apple emoji, YMMW.
 
