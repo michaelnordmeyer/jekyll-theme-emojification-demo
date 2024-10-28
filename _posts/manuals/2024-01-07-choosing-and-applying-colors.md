@@ -33,7 +33,7 @@ This page’s `hotpink.scss`:
 ```scss
 ---
 ---
-@import "black-white";
+@use "black-white";
 
 :root {
   --bg-color: hsl(330 100% 71%);
@@ -56,7 +56,7 @@ For named colors like “orange“, the file has to be named `orange.scss`. Crea
 ```css
 ---
 ---
-@import "black-white";
+@use "black-white";
 
 :root {
   --bg-color: hsl(39 100% 50%);
