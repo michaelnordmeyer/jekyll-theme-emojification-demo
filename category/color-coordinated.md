@@ -1,5 +1,6 @@
 ---
 title: "Color-Coordinated"
+last_modified_at: 2024-01-01 13:00 +01:00
 excerpt: "Category: Color-Coordinated"
 sitemap: true
 colorful_index: true

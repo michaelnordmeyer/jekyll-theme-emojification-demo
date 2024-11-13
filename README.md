@@ -8,9 +8,8 @@ This demo shows several different color combinations and index page styles. Feat
 
 ## Additional Features
 
-Some features cannot applied automatically due to how Jekyll integrates remote themes. They have to be copied manually from this demo repository.
+Some features cannot applied automatically due to how Jekyll integrates gem-based or remote themes. They have to be copied manually from this demo repository.
 
-- Category pages
-- Custom error pages
-- An in-browser styled Atom feed through a feed XSLT, which is automatically applied by the `jekyll-feed` plugin. It educates people about feeds.
-- An in-browser styled sitemap through a sitemap XSLT, which is automatically applied by the `jekyll-sitemap` plugin. Probably only the site owner might look at it every once in a while.
+- Category pages from `/category/`
+- Category feed pages from `/feeds/`, if some or all categories should have feeds
+- Custom error pages from `/error/`

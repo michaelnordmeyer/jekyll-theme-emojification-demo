@@ -1,5 +1,6 @@
 ---
 list_title: Posts
+last_modified_at: 2024-01-01 13:00 +01:00
 permalink: /index-colorful
 layout: home
 colorful_index: true

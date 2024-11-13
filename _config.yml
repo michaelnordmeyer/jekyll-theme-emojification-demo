@@ -68,8 +68,8 @@ feed:
   disable_in_development: true # default: false
   hide_generator: true # default: false
   icon: /assets/icons/yellowgreen.webp # optional, falls back on site.favicon
-  # path: /feed.atom # default: /feed.xml
-  # path_xslt: /feed.xslt # default: /feed.xslt.xml
+  path: /feeds/all.xml # default: /feed.xml
+  path_xslt: /feeds/feed.xslt.xml # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10
   smartify_content: true # default: false
   title_separator: ": "
@@ -113,6 +113,13 @@ defaults:
       permalink: /:path/:basename
       sitemap: false
       icon: 😩
+  - scope:
+      path: feeds
+      type: pages
+    values:
+      layout: feed-xml
+      permalink: /:path/:basename:output_ext
+      sitemap: false
   - scope:
       path: ""
     values:

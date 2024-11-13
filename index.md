@@ -40,23 +40,26 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 - Pages
 - Fancy category pages (also on GitHub Pages, where additional plugins are not allowed)
 - A styled redirection page, which will be used by the optional plugin [Jekyll Redirect From](https://github.com/jekyll/jekyll-redirect-from)
-- An optional [colorful index](/index-colorful)
+- Built-in feed and sitemap creation with styling (no dependency to jekyll-feed and jekyll-sitemap)
+- Theme-color matching favicons
+- Optional [colorful index pages](/index-colorful)
 - Header images
 - Optional excerpts in feed, SEO tags, and on category and home pages
 - Content warnings for embedded videos
 - Hidden semantic info for embedding and SEO like [Open Graph](https://ogp.me/), [JSON-LD](https://json-ld.org/), and inline [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)). No need for the `jekyll-seo-tag` plugin
 - Minimal build and load times
+- Custom header and footer to add snippets
+- Basic [Webmention](https://indieweb.org/Webmention) support (needs third-party service like [Webmention.io](https://webmention.io) or additional server software), which allows subscribing to a feed of Webmentions, which are cross-site notifications
 
 ## Additional Features
 
-Some features cannot applied automatically due to how Jekyll integrates remote themes.
+Some features cannot applied automatically due to how Jekyll integrates gem-based or remote themes. They have to be copied manually to your site’s root directory and are included in the [demo repository](https://github.com/michaelnordmeyer/jekyll-theme-emojification-demo).
 
-- Category pages
-- Custom error pages
-- An [in-browser styled Atom feed](/feed.xml) through a feed XSLT, which is automatically applied by the `jekyll-feed` plugin. It educates people about feeds.
-- An [in-browser styled sitemap](/sitemap.xml) through a sitemap XSLT, which is automatically applied by the `jekyll-sitemap` plugin. Probably only the site owner might look at it every once in a while.
+- Category pages from `/category/`
+- Category feed pages from `/feeds/`, if some or all categories should have feeds
+- Custom error pages from `/error/`
 
-Those additional features can be installed by copying the [demo content’s](https://github.com/michaelnordmeyer/jekyll-theme-emojification-demo) `category` directory,  `error` directory, `feed.xslt.xml`, and `sitemap.xsl` to your site’s root directory. Only the categories and custom error pages need to be edited, if you want to (category name, color, emoji, title, permalink, maybe extra textual content).
+Only the categories and custom error pages need to be edited, if you want to (category name, color, emoji, title, permalink, maybe extra textual content).
 
 ## Color and Emoji Configuration
 
