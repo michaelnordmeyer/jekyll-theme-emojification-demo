@@ -4,6 +4,7 @@ date: 2024-01-07 22:00 +0100
 excerpt: Only named colors and hex codes are supported
 categories: Manuals
 permalink: /manual/choosing-and-applying-colors
+uuid: 4029A474-A526-40FC-84BF-6EC064408E38
 icon: 🎨
 theme_color: hotpink
 ---

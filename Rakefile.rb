@@ -15,6 +15,12 @@ task :generate do
   system "./generate-previews.sh"
 end
 
+desc "Creates a draft from a template with an UUID"
+task :draft do
+  puts "==> Creating draft..."
+  system "sed \"s/uuid:/uuid: $(uuidgen)/\" _drafts/_.md > _drafts/$(date +%Y-%m-%d_%H-%M-%S).md"
+end
+
 desc "Builds the site"
 task :build do
   puts "==> Building #{domain}..."

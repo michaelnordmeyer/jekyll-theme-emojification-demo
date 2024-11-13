@@ -8,6 +8,7 @@ image:
   title: Paper lanterns in Kyoto at night
 categories: Features
 permalink: /feature/header-images
+uuid: 4199C296-DAEC-4F15-9BBE-2AF80F66CB96
 icon: 🏞️
 theme_color: gold
 ---

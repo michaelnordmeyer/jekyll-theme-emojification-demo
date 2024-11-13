@@ -4,6 +4,7 @@ date: 2024-01-08 17:00 +0100
 excerpt: A category index can look very differently.
 categories: Features
 permalink: /feature/fancy-or-ordinary-categories
+uuid: 49438C1D-3AE6-41CF-9C8B-284AF1564928
 icon: 🎩
 theme_color: gold
 ---

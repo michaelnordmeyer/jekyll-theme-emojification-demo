@@ -5,6 +5,7 @@ excerpt: There are favicons for each theme color.
 categories: Features
 tags: ["Cool Feature"]
 permalink: /feature/theme-colored-favicons
+uuid: DB8D71F5-D58B-4D05-B328-5A5E35BE2592
 icon: 🌟
 theme_color: gold
 ---

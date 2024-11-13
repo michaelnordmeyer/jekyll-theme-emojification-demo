@@ -5,6 +5,7 @@ excerpt: Custom error pages can have custom emoji and colors.
 categories: Features
 tags: ["Cool Feature"]
 permalink: /feature/custom-error-pages
+uuid: F05B8799-A6D5-4298-8C21-259E16C335CC
 icon: 🎏
 theme_color: gold
 ---

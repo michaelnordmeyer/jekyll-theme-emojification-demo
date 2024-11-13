@@ -4,6 +4,7 @@ date: 2024-01-05 20:00 +0100
 excerpt: Hiding Icons is an option.
 categories: Manuals
 permalink: /manual/hiding-icons
+uuid: 38E1A0BC-6F42-4287-8F54-797E87D9B9F3
 hide_icon: true
 hide_list_icon: true
 theme_color: hotpink
