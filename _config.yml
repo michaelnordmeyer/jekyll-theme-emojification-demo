@@ -38,6 +38,7 @@ lang: en-US # default: en
 # minify: true # default: false
 # Social links are used in SEO meta headers
 social:
+  fediverse_creator: "@mnordmeyer@indieweb.social" # "@username@fediverse.example"
   links:
     - https://github.com/michaelnordmeyer
     - https://www.linkedin.com/in/michaelnordmeyer
@@ -45,10 +46,12 @@ social:
     - https://indieweb.social/@mnordmeyer
 title_separator: • # default: |
 ## Custom theme settings
-favicon: /assets/icons/yellowgreen.webp # optional, is used by the Atom feed
+favicon: /assets/icons/yellowgreen.webp # optional, is used by feeds as fallback and sitemap
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
 theme_settings:
-  category_title_prefix: "Category: "
+  # category_dir: "/categories" # default: "/category"
+  # category_title_prefix: "" # default: "Category: "
+  # category_feed_all_name: "Full" # default: "All" (has to match the basename without extension of feed.path setting)
   icon: 🌳
   # redirect_page_title: "Redirecting…" # default: "Redirecting…"
   # redirect_page_from: "Redirecting from" # default: "Redirecting from"
@@ -61,12 +64,15 @@ theme_settings:
 
 ## Plugin settings jekyll-feed
 feed:
+  category_path: /feeds/ # default: /feed/
   disable_in_development: true # default: false
   hide_generator: true # default: false
+  icon: /assets/icons/yellowgreen.webp # optional, falls back on site.favicon
   # path: /feed.atom # default: /feed.xml
   # path_xslt: /feed.xslt # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10
   smartify_content: true # default: false
+  title_separator: ": "
 
 ## Plugin settings jekyll-last-modified-at
 # Takes git mtime before file mtime
@@ -93,14 +99,14 @@ defaults:
       layout: page
       permalink: /:path/:basename
   - scope:
-      path: "category"
+      path: category
       type: pages
     values:
       layout: category
       permalink: /:path/:basename
       sitemap: false
   - scope:
-      path: "error"
+      path: error
       type: pages
     values:
       layout: error
