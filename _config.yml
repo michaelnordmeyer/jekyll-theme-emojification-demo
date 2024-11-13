@@ -35,16 +35,16 @@ author:
   license_link: https://raw.githubusercontent.com/michaelnordmeyer/jekyll-theme-emojification/main/LICENSE
 # date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
 lang: en-US # default: en
-# minify: true # default: false
+# minify: true # default: false (jekyll-feed, jekyll-sitemap)
 # Social links are used in SEO meta headers
 social:
   fediverse_creator: "@mnordmeyer@indieweb.social" # "@username@fediverse.example"
-  links:
+  links: # The first link will become the webmention `authn`
     - https://github.com/michaelnordmeyer
     - https://www.linkedin.com/in/michaelnordmeyer
     - https://www.xing.com/profile/Michael_Nordmeyer
     - https://indieweb.social/@mnordmeyer
-title_separator: • # default: |
+title_separator: • # default: -
 ## Custom theme settings
 favicon: /assets/icons/yellowgreen.webp # optional, is used by feeds as fallback and sitemap
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
@@ -62,27 +62,17 @@ theme_settings:
   theme_color: yellowgreen # default: none (= no colors. If this CSS file is missing, there will be also no structural styling)
   webmention_url: https://webmention.io/jekyll-theme-emojification.michaelnordmeyer.com/webmention
 
-## Plugin settings jekyll-feed
+## Plugin settings jekyll-feed (built-in)
 feed:
   category_path: /feeds/ # default: /feed/
-  disable_in_development: true # default: false
   hide_generator: true # default: false
   icon: /assets/icons/yellowgreen.webp # optional, falls back on site.favicon
   path: /feeds/all.xml # default: /feed.xml
   path_xslt: /feeds/feed.xslt.xml # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10
-  smartify_content: true # default: false
   title_separator: ": "
 
-## Plugin settings jekyll-last-modified-at
-# Takes git mtime before file mtime
-# Might fail on hosted site building. Mitigate with GitHub Action’s `fetch-depth: 0` or git's `Git fetch --unshallow &&` onto the build command
-last-modified-at:
-  date-format: "%Y-%m-%d" # default: "%d-%b-%y"
-
-## Plugin settings jekyll-seo-tag
-# tagline:
-logo: /assets/icons/yellowgreen.webp
+## Plugin settings jekyll-seo-tag (built-in)
 
 ## https://jekyllrb.com/docs/configuration/front-matter-defaults/
 # Only works for all posts, but can work for a subset of pages
@@ -109,10 +99,10 @@ defaults:
       path: error
       type: pages
     values:
+      icon: 😩
       layout: error
       permalink: /:path/:basename
       sitemap: false
-      icon: 😩
   - scope:
       path: feeds
       type: pages
@@ -120,10 +110,6 @@ defaults:
       layout: feed-xml
       permalink: /:path/:basename:output_ext
       sitemap: false
-  - scope:
-      path: ""
-    values:
-      layout: default
   - scope:
       path: defaults-test
       type: pages
@@ -133,3 +119,7 @@ defaults:
       layout: page
       sitemap: false
       theme_color: dodgerblue
+  - scope:
+      path: ""
+    values:
+      layout: default
