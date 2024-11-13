@@ -33,7 +33,6 @@ author:
   uri: https://michaelnordmeyer.com/
   copyright: Copyright © Michael Nordmeyer
   license_link: https://raw.githubusercontent.com/michaelnordmeyer/jekyll-theme-emojification/main/LICENSE
-cache_buster: true # default: false
 # date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
 lang: en-US # default: en
 # minify: true # default: false
