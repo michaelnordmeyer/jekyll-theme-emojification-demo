@@ -51,24 +51,24 @@ favicon: /assets/icons/yellowgreen.webp # optional, is used by feeds as fallback
 theme_settings:
   # category_dir: "/categories" # default: "/category"
   # category_title_prefix: "" # default: "Category: "
-  # category_feed_all_name: "Full" # default: "All" (has to match the basename without extension of feed.path setting)
+  category_feed_all_name: "All" # (mandatory, but can be "")
+  # feed_filename: "feed.xml" # default: "feed.xml"
   icon: 🌳
   # redirect_page_title: "Redirecting…" # default: "Redirecting…"
   # redirect_page_from: "Redirecting from" # default: "Redirecting from"
   # redirect_page_to: "to" # default: "to"
   # redirect_page_text: "Click here if you are not being redirected." # default: "Click here if you are not being redirected.""
-  # show_excerpts is used to enable excerpts on index pages like home and categories
+  # show_excerpts is used to enable excerpts on posts, pages, and index pages like home and categories
   show_excerpts: true # default: false
   theme_color: yellowgreen # default: none (= no colors. If this CSS file is missing, there will be also no structural styling)
   webmention_url: https://webmention.io/jekyll-theme-emojification.michaelnordmeyer.com/webmention
 
 ## Plugin settings jekyll-feed (built-in)
 feed:
-  category_path: /feeds/ # default: /feed/
   hide_generator: true # default: false
-  icon: /assets/icons/yellowgreen.webp # optional, falls back on site.favicon
-  path: /feeds/all.xml # default: /feed.xml
-  path_xslt: /feeds/feed.xslt.xml # default: /feed.xslt.xml
+  icon: /assets/icons/yellowgreen.webp # optional, default: site.favicon
+  path: /feed.xml # default: /feed.xml (mandatory)
+  # path_xslt: /feed.xslt.xml # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10
   title_separator: ": "
 
@@ -89,11 +89,11 @@ defaults:
       layout: page
       permalink: /:path/:basename
   - scope:
-      path: category
+      path: category/*/index.md
       type: pages
     values:
       layout: category
-      permalink: /:path/:basename
+      permalink: /:path/
       sitemap: false
   - scope:
       path: error
@@ -104,7 +104,7 @@ defaults:
       permalink: /:path/:basename
       sitemap: false
   - scope:
-      path: feeds
+      path: "**/feed.xml"
       type: pages
     values:
       layout: feed-xml

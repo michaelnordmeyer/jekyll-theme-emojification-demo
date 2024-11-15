@@ -4,7 +4,7 @@ permalink: /
 layout: home
 icon: 🧑‍🎨
 ---
-A simple and minimal single-author theme with configurable big emoji as the header link, and configurable background colors, which can be chosen for each post or page. [Sample craziness](/category/the-important-bits).
+A simple and minimal single-author theme with configurable big emoji as the header link, and configurable background colors, which can be chosen for each post or page. [Sample craziness](/category/colors/).
 
 ![Sample](/repo-card.png){: style="box-shadow: 5px 5px black;"}
 
@@ -18,7 +18,7 @@ And if that much color is not your thing but you like the rest, there is a black
 
 ## Previews
 
-This demo has two categories each having the same style. [Features in gold](/category/features) and [manuals in hotpink](/category/manuals), while the rest of the site is in yellowgreen.
+This demo has two categories each having the same style. [Features in gold](/category/features/) and [manuals in hotpink](/category/manuals/), while the rest of the site is in yellowgreen.
 
 In the [posts from 2023 below](#2023) are a variety of color-matching emoji. Matching was done with Apple emoji, YMMW.
 
@@ -53,11 +53,11 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 
 ## Additional Features
 
-Some features cannot applied automatically due to how Jekyll integrates gem-based or remote themes. They have to be copied manually to your site’s root directory and are included in the [demo repository](https://github.com/michaelnordmeyer/jekyll-theme-emojification-demo).
+Some features cannot be applied automatically due to how Jekyll integrates gem-based or remote themes. They have to be copied manually to your site’s root directory and are included in the [demo repository](https://github.com/michaelnordmeyer/jekyll-theme-emojification-demo).
 
-- Category pages from `/category/`
-- Category feed pages from `/feeds/`, if some or all categories should have feeds
+- Category and feed pages from `/category/`
 - Custom error pages from `/error/`
+- Settings from `/_config.yml`
 - Draft, build, and deploy support via `/Rakefile.rb`, including creating a UUID for posts
 
 Only the categories and custom error pages need to be edited, if you want to (category name, color, emoji, title, permalink, maybe extra textual content).

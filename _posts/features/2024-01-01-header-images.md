@@ -6,7 +6,7 @@ image:
   path: /images/2011/lanterns.webp
   alt: Paper lanterns in Kyoto at night
   title: Paper lanterns in Kyoto at night
-categories: Features
+category: Features
 permalink: /feature/header-images
 uuid: 4199C296-DAEC-4F15-9BBE-2AF80F66CB96
 icon: 🏞️

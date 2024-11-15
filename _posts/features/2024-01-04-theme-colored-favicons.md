@@ -2,7 +2,7 @@
 title: Theme-Colored Favicons
 date: 2024-01-04 16:00 +0100
 excerpt: There are favicons for each theme color.
-categories: Features
+category: Features
 tags: ["Cool Feature"]
 permalink: /feature/theme-colored-favicons
 uuid: DB8D71F5-D58B-4D05-B328-5A5E35BE2592
