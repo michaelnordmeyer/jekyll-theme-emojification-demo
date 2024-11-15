@@ -25,6 +25,8 @@ desc "Builds the site"
 task :build do
   puts "==> Building #{domain}..."
   system "JEKYLL_ENV=\"production\" bundle exec jekyll build"
+  system "cp _site$(yq '.favicon' < _config.yml) _site$(yq '.feed.icon' < _config.yml)"
+  system "printf 'Sitemap: https://#{domain}/sitemap.xml\n\n' > _site/robots.txt"
   system "cat ../../../michaelnordmeyer.com/robots.txt >> _site/robots.txt"
 end
 
