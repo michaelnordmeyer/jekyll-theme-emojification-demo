@@ -1,7 +1,7 @@
 ---
 title: Applying Emoji
 date: 2024-01-06 21:00 +0100
-excerpt: It’s just pasting an emoji in frontmatter.
+description: It’s just pasting an emoji in frontmatter.
 category: Manuals
 permalink: /manual/applying-emoji
 uuid: A6B1F521-70B7-4CF1-8F94-6A56A55B9E51

@@ -18,7 +18,7 @@ This site’s relevant config:
     path: defaults-test
     type: pages
   values:
-    excerpt: "A quick test to test _config.yml defaults."
+    description: "A quick test to test _config.yml defaults."
     icon: 🪽
     layout: page
     sitemap: false

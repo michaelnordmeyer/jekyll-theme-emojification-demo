@@ -1,7 +1,7 @@
 ---
 title: Theme-Colored Favicons
 date: 2024-01-04 16:00 +0100
-excerpt: There are favicons for each theme color.
+description: There are favicons for each theme color.
 category: Features
 tags: ["Cool Feature"]
 permalink: /feature/theme-colored-favicons

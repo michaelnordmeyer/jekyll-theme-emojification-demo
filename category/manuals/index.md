@@ -1,6 +1,6 @@
 ---
 title: "Manuals"
-excerpt: "Category: Manuals"
+description: "Manuals to some features"
 icon: 📚
 theme_color: hotpink
 ---

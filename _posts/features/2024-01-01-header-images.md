@@ -1,7 +1,7 @@
 ---
 title: Header Images
 date: 2024-01-01 13:00 +0100
-excerpt: Optional header images with `alt` and `title` attributes.
+description: Optional header images with `alt` and `title` attributes.
 image:
   path: /images/2011/lanterns.webp
   alt: Paper lanterns in Kyoto at night

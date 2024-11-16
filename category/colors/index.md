@@ -2,11 +2,11 @@
 title: "Colors"
 date: 2024-01-01 13:00 +01:00
 last_modified_at: 2024-01-01 13:00 +01:00
-excerpt: "Category: Colors"
+description: "Generated demo pages with different color but same content"
 sitemap: true
 colorful_index: true
 hide_dates: true
-hide_excerpts: true
+hide_descriptions: true
 icon: 🏳️‍🌈
 ---
 If the ordinary post index is too boring, there’s also a crazy option. Put `colorful_index: true` in an index page’s frontmatter, like here, and the index entries display the full expressiveness.
@@ -21,4 +21,4 @@ Dates can be removed with `hide_dates: true` in the index page’s frontmatter.
 
 The list emoji of the `colorful_index` can be removed with `hide_list_icon: true` in the index page’s frontmatter.
 
-The site-wide `show_excerpts` under the key `theme_settings` can be overridden with `hide_excerpts: true` in the index page’s frontmatter to allow for custom index pages tailored to the expressiveness of the listed posts or pages.
+The site-wide `show_descriptions` under the key `theme_settings` can be overridden with `hide_descriptions: true` in the index page’s frontmatter to allow for custom index pages tailored to the expressiveness of the listed posts or pages.

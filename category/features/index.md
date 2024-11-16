@@ -1,6 +1,6 @@
 ---
 title: "Features"
-excerpt: "Category: Features"
+description: "A demo of the features"
 icon: 💐
 theme_color: gold
 ---

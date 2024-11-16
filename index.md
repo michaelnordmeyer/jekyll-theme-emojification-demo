@@ -44,7 +44,7 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 - Theme-color matching favicons
 - Optional [colorful index pages](/index-colorful)
 - Header images
-- Optional excerpts in feed, SEO tags, and on category and home pages
+- Optional descriptions or excerpts in feed, SEO tags, and on category and home pages
 - Content warnings for embedded videos
 - Hidden semantic info for embedding and SEO like [Open Graph](https://ogp.me/), [JSON-LD](https://json-ld.org/), and inline [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)). No need for the `jekyll-seo-tag` plugin
 - Minimal build and load times

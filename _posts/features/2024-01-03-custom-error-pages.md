@@ -1,7 +1,7 @@
 ---
 title: Custom Error Pages
 date: 2024-01-03 15:00 +0100
-excerpt: Custom error pages can have custom emoji and colors.
+description: Custom error pages can have custom emoji and colors.
 category: Features
 tags: ["Cool Feature"]
 permalink: /feature/custom-error-pages
