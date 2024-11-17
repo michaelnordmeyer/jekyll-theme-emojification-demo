@@ -49,7 +49,6 @@ title_separator: " • " # default: " | "
 favicon: /assets/icons/yellowgreen.webp # optional, is used by feeds as fallback and sitemap
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
 theme_settings:
-  # category_dir: "/categories" # default: "/category"
   # category_title_prefix: "" # default: "Category: "
   category_feed_all_name: "All" # (mandatory, but can be "")
   # feed_filename: "feed.xml" # default: "feed.xml"
@@ -90,11 +89,8 @@ defaults:
       layout: page
       permalink: /:path/:basename
   - scope:
-      path: category/*/index.md
-      type: pages
+      path: colors/_posts
     values:
-      layout: category
-      permalink: /:path/
       sitemap: false
   - scope:
       path: error

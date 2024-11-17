@@ -10,7 +10,7 @@ This demo shows several different color combinations and index page styles. Feat
 
 Some features cannot be applied automatically due to how Jekyll integrates gem-based or remote themes. They have to be copied manually from this demo repository.
 
-- Category and feed pages from `/category/`
-- Custom error pages from `/error/`
-- Settings from `/_config.yml`
-- Draft, build, and deploy support via `/Rakefile.rb`, including creating a UUID for posts
+- Category settings, and category and feed pages, e.g. `_data/categories.yml`, `colors/index.md`, and `colors/feed.xml`
+- Custom error pages from directory `error`
+- Settings from `_config.yml`
+- Draft, build, and deploy support via `Rakefile.rb`, including creating a UUID for posts
