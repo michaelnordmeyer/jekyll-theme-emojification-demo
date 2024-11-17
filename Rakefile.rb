@@ -54,3 +54,9 @@ task :gzip do
   puts "==> Gzip'ing #{domain} via SSH..."
   system "ssh -p #{ssh_port} #{ssh_user}@#{ssh_domain} 'for file in $(find #{ssh_path} -type f -name \"*.html\" -o -name \"*.css\" -o -name \"*.css.map\" -o -name \"*.js\" -o -name \"*.svg\" -o -name \"*.xml\" -o -name \"*.xsl\" -o -name \"*.xslt\" -o -name \"*.json\" -o -name \"*.txt\"); do printf . && gzip -kf \"${file}\"; done; echo'"
 end
+
+desc "Cleans the working dir"
+task :clean do
+  puts "==> Cleaning #{domain}..."
+  system "bundle exec jekyll clean"
+end
