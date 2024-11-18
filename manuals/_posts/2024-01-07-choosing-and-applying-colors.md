@@ -1,6 +1,6 @@
 ---
 title: Choosing and Applying Colors
-date: 2024-01-07 22:00 +0100
+date: 2024-01-07 21:00 +0000
 description: Only named colors and hex codes are supported
 permalink: /manual/choosing-and-applying-colors
 uuid: 4029A474-A526-40FC-84BF-6EC064408E38

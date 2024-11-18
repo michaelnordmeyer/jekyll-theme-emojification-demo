@@ -1,6 +1,6 @@
 ---
 title: Video Content Warnings
-date: 2024-01-02 14:00 +0100
+date: 2024-01-02 13:00 +0000
 description: Post lists can have content warnings to hint privacy-violating video embeds.
 permalink: /feature/video-content-warnings
 uuid: D336B548-70E2-41A8-B631-92306F05D8DE
