@@ -66,7 +66,7 @@ theme_settings:
 feed:
   # excerpt_only: true # default: false (can be declard in front matter as well)
   hide_generator: true # default: false
-  icon: /assets/icons/yellowgreen.webp # optional, default: site.favicon
+  icon: /assets/icons/feed.webp # optional, default: site.favicon
   path: /feed.xml # default: /feed.xml (mandatory)
   # path_xslt: /feed.xslt.xml # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10

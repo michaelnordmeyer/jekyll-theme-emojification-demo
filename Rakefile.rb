@@ -9,54 +9,89 @@ ssh_path = "/var/www/#{domain}/"
 
 task :default => ["build"]
 
-desc "Generate previews"
-task :generate do
-  puts "==> Generating previews for #{domain}..."
-  system "./generate-previews.sh"
-end
-
 desc "Creates a draft from a template with an UUID"
 task :draft do
   puts "==> Creating draft..."
-  system "sed \"s/uuid:/uuid: $(uuidgen)/\" _drafts/_.md > _drafts/$(date +%Y-%m-%d_%H-%M-%S).md"
+  sh 'sed "s/uuid:/uuid: $(uuidgen)/" _drafts/_.md > _drafts/$(date +%Y-%m-%d_%H-%M-%S).md'
+end
+
+desc "Builds the feed icon"
+task :feedicon do
+  puts "==> Building #{domain} feed icon..."
+  sh "cp _site/$(yq '.favicon' < _config.yml) _site/$(yq '.feed.icon' < _config.yml)"
+end
+
+desc "Builds the robots.txt"
+task :robots do
+  puts "==> Building #{domain} robots.txt..."
+  sh "printf 'Sitemap: https://#{domain}/sitemap.xml\\n\\n' > robots.txt"
+  sh "cat ../../../michaelnordmeyer.com/robots.txt >> robots.txt"
 end
 
 desc "Builds the site"
 task :build do
+  Rake::Task[:robots].invoke
   puts "==> Building #{domain}..."
-  system "JEKYLL_ENV=\"production\" bundle exec jekyll build"
-  system "cp _site$(yq '.favicon' < _config.yml) _site$(yq '.feed.icon' < _config.yml)"
-  system "printf 'Sitemap: https://#{domain}/sitemap.xml\n\n' > _site/robots.txt"
-  system "cat ../../../michaelnordmeyer.com/robots.txt >> _site/robots.txt"
+  sh "JEKYLL_ENV=\"production\" bundle exec jekyll build"
+  Rake::Task[:feedicon].invoke
 end
 
 desc "Serves the site locally"
 task :serve do
+  Rake::Task[:robots].invoke
   puts "==> Building and serving #{domain} locally..."
-  system "bundle exec jekyll serve"
+  sh "bundle exec jekyll serve"
 end
 
-desc "Deploys the content of ./_site to the server via rsync"
+desc "Syncs the content of ./_site to the server via rsync"
 task :rsync do
   puts "==> Rsyncing #{domain}'s content to SSH host #{ssh_domain}"
-  system "rsync -e 'ssh -p #{ssh_port}' -vcrlptDShP --delete --rsync-path 'sudo -u root rsync' --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
+  sh "rsync -e 'ssh -p #{ssh_port}' -vcrlptDShP --delete --rsync-path 'sudo -u root rsync' --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
     --exclude=.DS_Store \
     --exclude=._* \
     --exclude=.git \
     --exclude=.gitignore \
     _site/ \
     #{ssh_user}@#{ssh_domain}:#{ssh_path}"
-  system 'rm -rf _site'
+  sh 'rm -rf _site'
+end
+
+desc "Copies robots.txt to the server via scp"
+task :scprobots do
+  puts "==> Scp’ing https://#{domain} robots.txt to #{ssh_domain}"
+  sh "scp -P #{ssh_port} robots.txt #{ssh_user}@#{ssh_domain}:#{ssh_path}"
 end
 
 desc "Gzips the site via SSH"
 task :gzip do
   puts "==> Gzip'ing #{domain} via SSH..."
-  system "ssh -p #{ssh_port} #{ssh_user}@#{ssh_domain} 'for file in $(find #{ssh_path} -type f -name \"*.html\" -o -name \"*.css\" -o -name \"*.css.map\" -o -name \"*.js\" -o -name \"*.svg\" -o -name \"*.xml\" -o -name \"*.xsl\" -o -name \"*.xslt\" -o -name \"*.json\" -o -name \"*.txt\"); do printf . && gzip -kf \"${file}\"; done; echo'"
+  sh "ssh -p #{ssh_port} #{ssh_user}@#{ssh_domain} 'for file in $(find #{ssh_path} -type f -name \"*.html\" -o -name \"*.css\" -o -name \"*.css.map\" -o -name \"*.js\" -o -name \"*.svg\" -o -name \"*.xml\" -o -name \"*.xsl\" -o -name \"*.xslt\" -o -name \"*.json\" -o -name \"*.txt\"); do printf . && gzip -kf \"${file}\"; done; echo'"
 end
 
-desc "Cleans the working dir"
+desc "Gzips robots.txt via SSH"
+task :gziprobots do
+  puts "==> Gzip'ing #{domain} robots.txt via SSH..."
+  sh "ssh -p #{ssh_port} #{ssh_user}@#{ssh_domain} 'gzip -kf #{ssh_path}robots.txt'"
+end
+
+desc "Builds and deploys the site"
+task :deploy do
+  puts "==> Building and deploying #{domain}..."
+  Rake::Task[:build].invoke
+  Rake::Task[:rsync].invoke
+  Rake::Task[:gzip].invoke
+end
+
+desc "Builds and deploys the robots.txt"
+task :deployrobots do
+  puts "==> Building and deploying #{domain} robots.txt..."
+  Rake::Task[:robots].invoke
+  Rake::Task[:scprobots].invoke
+  Rake::Task[:gziprobots].invoke
+end
+
+desc "Cleans the source dir"
 task :clean do
   puts "==> Cleaning #{domain}..."
-  system "bundle exec jekyll clean"
+  sh "bundle exec jekyll clean"
 end
