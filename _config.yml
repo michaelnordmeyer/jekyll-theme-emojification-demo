@@ -101,13 +101,6 @@ defaults:
       layout: error
       sitemap: false
   - scope:
-      path: "**/feed.xml"
-      type: pages
-    values:
-      layout: feed-xml
-      permalink: /:path/:basename:output_ext
-      sitemap: false
-  - scope:
       path: defaults-test
       type: pages
     values:
