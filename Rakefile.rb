@@ -28,7 +28,7 @@ task :robots do
   sh "cat ../../../michaelnordmeyer.com/robots.txt >> robots.txt"
 end
 
-desc "Builds the site"
+desc "Builds the site for deployment"
 task :build do
   Rake::Task[:robots].invoke
   puts "==> Building #{domain}..."
@@ -53,12 +53,11 @@ task :rsync do
     --exclude=.gitignore \
     _site/ \
     #{ssh_user}@#{ssh_domain}:#{ssh_path}"
-  sh 'rm -rf _site'
 end
 
 desc "Copies robots.txt to the server via scp"
 task :scprobots do
-  puts "==> Scp’ing https://#{domain} robots.txt to #{ssh_domain}"
+  puts "==> Scp’ing #{domain} robots.txt to SSH host #{ssh_domain}"
   sh "scp -P #{ssh_port} robots.txt #{ssh_user}@#{ssh_domain}:#{ssh_path}"
 end
 
@@ -80,6 +79,7 @@ task :deploy do
   Rake::Task[:build].invoke
   Rake::Task[:rsync].invoke
   Rake::Task[:gzip].invoke
+  Rake::Task[:clean].invoke
 end
 
 desc "Builds and deploys the robots.txt"
