@@ -65,3 +65,5 @@ Only the categories and custom error pages need to be edited, if you want to (ca
 ## Color and Emoji Configuration
 
 If the process of declaring all those colors and icons described in the posts below seems tedious, there’s [Jekyll’s frontmatter defaults](/defaults-test/dodgerblue) to avoid duplication.
+
+---

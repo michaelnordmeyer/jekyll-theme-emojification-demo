@@ -23,3 +23,5 @@ Dates can be removed with `hide_dates: true` in the index page’s frontmatter.
 The list emoji of the `colorful_index` can be removed with `hide_list_icon: true` in the index page’s frontmatter.
 
 The site-wide `show_descriptions` under the key `theme_settings` can be overridden with `hide_descriptions: true` in the index page’s frontmatter to allow for custom index pages tailored to the expressiveness of the listed posts or pages.
+
+---
