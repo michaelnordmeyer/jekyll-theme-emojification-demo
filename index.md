@@ -1,5 +1,6 @@
 ---
 list_title: Posts
+last_modified_at: 2024-11-22 12:00 +00:00
 permalink: /
 layout: home
 icon: 🧑‍🎨

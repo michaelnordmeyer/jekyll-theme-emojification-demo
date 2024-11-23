@@ -1,6 +1,6 @@
 ---
-date: 2024-01-01 13:00 +01:00
-last_modified_at: 2024-01-01 13:00 +01:00
+date: 2024-01-01 12:00 +00:00
+last_modified_at: 2024-01-01 12:00 +00:00
 description: "Generated demo pages with different color but same content"
 colorful_index: true
 hide_dates: true
