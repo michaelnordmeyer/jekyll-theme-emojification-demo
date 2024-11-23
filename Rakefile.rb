@@ -15,17 +15,25 @@ task :draft do
   sh 'sed "s/uuid:/uuid: $(uuidgen)/" _drafts/_.md > _drafts/$(date +%Y-%m-%d_%H-%M-%S).md'
 end
 
+desc "Builds the robots.txt"
+task :robots do
+  puts "==> Building #{domain} robots.txt..."
+  sh "printf 'Sitemap: https://#{domain}/sitemap.xml\\n\\n' > robots.txt"
+  sh "cat ../../../michaelnordmeyer.com/robots.txt >> robots.txt"
+end
+
 desc "Builds the feed icon"
 task :feedicon do
   puts "==> Building #{domain} feed icon..."
   sh "cp _site/$(yq '.favicon' < _config.yml) _site/$(yq '.feed.icon' < _config.yml)"
 end
 
-desc "Builds the robots.txt"
-task :robots do
-  puts "==> Building #{domain} robots.txt..."
-  sh "printf 'Sitemap: https://#{domain}/sitemap.xml\\n\\n' > robots.txt"
-  sh "cat ../../../michaelnordmeyer.com/robots.txt >> robots.txt"
+desc "Beautifies kramdown output"
+task :beautify do
+  puts "==> Beautifying #{domain} kramdown output..."
+  sh "for file in _site/*.html _site/**/*.html; do sed -i '' -E 's,<((br|hr|img|link|meta).*) />,<\\1>,g' ${file}; done"
+  sh "for file in _site/*.html _site/**/*.html; do sed -i '' -E 's/ class=\"footnotes?\"//g' ${file}; done"
+  sh "for file in _site/*.html _site/**/*.html; do sed -i '' -E 's/ class=\"reversefootnote\"//g' ${file}; done"
 end
 
 desc "Builds the site for deployment"
@@ -34,6 +42,7 @@ task :build do
   puts "==> Building #{domain}..."
   sh "JEKYLL_ENV=\"production\" bundle exec jekyll build"
   Rake::Task[:feedicon].invoke
+  Rake::Task[:beautify].invoke
 end
 
 desc "Serves the site locally"
