@@ -19,7 +19,6 @@ desc "Builds the robots.txt"
 task :robots do
   puts "==> Building #{domain} robots.txt..."
   sh "printf 'Sitemap: https://#{domain}/sitemap.xml\\n\\n' > robots.txt"
-  sh "printf 'User-agent: *\\nCrawl-delay: 1\\n\\n' >> robots.txt"
   sh "cat ../../../michaelnordmeyer.com/robots.txt >> robots.txt"
 end
 
