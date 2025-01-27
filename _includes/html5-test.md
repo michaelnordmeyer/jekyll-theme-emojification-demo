@@ -43,7 +43,7 @@ Another paragraph with more text to show, how the paragraph spacing is done. Not
 
 ### Anchor Tag (aka Link)
 
-This is a [link](https://example.com).
+This is a [link](https://example.com/).
 
 ### Block-Quote Tag
 
@@ -81,7 +81,7 @@ The image tag will show a linked image, in this case the favicon for this page, 
 
 ### Pre-Formatted Tag
 
-This tag was generated from Markdown's code fencing (```) with no specific syntax:
+This tag was generated from Markdown's code fencing (```) with CSS syntax:
 
 ```css
 .header {
