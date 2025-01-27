@@ -107,7 +107,6 @@ defaults:
       description: "A quick test to test _config.yml defaults."
       icon: 🪽
       layout: page
-      sitemap: false
       theme_color: dodgerblue
   - scope:
       path: ""
