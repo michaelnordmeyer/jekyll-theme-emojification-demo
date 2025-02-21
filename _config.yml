@@ -64,7 +64,7 @@ theme_settings:
 
 ## Plugin settings jekyll-feed (built-in)
 feed:
-  # excerpt_only: true # default: false (can be declard in front matter as well)
+  # excerpt_only: true # default: false (can be declared in front matter as well)
   hide_generator: true # default: false
   icon: /assets/icons/feed.webp # optional, default: site.favicon
   path: /feed.xml # default: /feed.xml (mandatory)
