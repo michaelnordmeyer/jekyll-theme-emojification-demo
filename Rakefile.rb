@@ -25,7 +25,7 @@ end
 desc "Builds the feed icon"
 task :feedicon do
   puts "==> Building #{domain} feed icon..."
-  sh "cp _site/$(yq '.favicon' < _config.yml) _site/$(yq '.feed.icon' < _config.yml)"
+  sh "cp _site/assets/icons/$(yq '.favicon' < _config.yml) _site/assets/icons/$(yq '.feed.icon' < _config.yml)"
 end
 
 desc "Beautifies kramdown output"
