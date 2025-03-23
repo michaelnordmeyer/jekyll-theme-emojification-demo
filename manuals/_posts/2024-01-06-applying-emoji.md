@@ -26,7 +26,6 @@ theme_settings:
 ---
 ```
 
-
 If there’s no `icon` in the frontmatter and no default icon set, then there will be no icon displayed and the home link won’t be click- or tapable anymore. Only the [access key](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey) remains (h).
 
 If icons for a limited number of pages should be hidden, [it can be done](/manual/hiding-icons) as well.
