@@ -46,7 +46,7 @@ social:
     - https://indieweb.social/@mnordmeyer
 title_separator: " • " # default: " | "
 ## Custom theme settings
-favicon: /assets/icons/yellowgreen.webp # optional, is used by feeds as fallback and sitemap
+favicon: yellowgreen.webp # filename, not full path. optional, is used by feeds as fallback and sitemap
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
 theme_settings:
   # category_title_prefix: "" # default: "Category: "
@@ -66,7 +66,7 @@ theme_settings:
 feed:
   # excerpt_only: true # default: false (can be declared in front matter as well)
   hide_generator: true # default: false
-  icon: /assets/icons/feed.webp # optional, default: site.favicon
+  icon: feed.webp # filename, not full path. optional, default: site.favicon
   path: /feed.xml # default: /feed.xml (mandatory)
   # path_xslt: /feed.xslt.xml # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10
