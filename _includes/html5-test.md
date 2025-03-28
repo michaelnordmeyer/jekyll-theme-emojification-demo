@@ -73,11 +73,9 @@ The image tag will show a linked image, in this case the favicon for this page, 
 {%- if theme_color contains '#' %}
   {%- assign theme_color = theme_color | replace: '#', '' %}
 {%- endif %}
-{% unless theme_color %}
-  {% assign theme_color = 'none' %}
-{% endunless %}
-
+{% unless theme_color == 'none' %}
 ![Image Alt Text]({{ '/assets/icons/' | relative_url }}{{ theme_color }}.webp "Image Title Text")
+{% endunless %}
 
 ### Pre-Formatted Tag
 
