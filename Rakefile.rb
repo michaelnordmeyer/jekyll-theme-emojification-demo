@@ -33,7 +33,7 @@ task :beautify do
   puts "==> Beautifying #{domain} kramdown output..."
   sh "for file in _site/*.html _site/**/*.html; do sed -i '' -E 's,<((br|hr|img|link|meta).*) />,<\\1>,g' ${file}; done"
   sh "for file in _site/*.html _site/**/*.html; do sed -i '' -E 's/ class=\"footnotes?\"//g' ${file}; done"
-  sh "for file in _site/*.html _site/**/*.html; do sed -i '' -E 's/ class=\"reversefootnote\"//g' ${file}; done"
+  sh "for file in _site/*.html _site/**/*.html; do sed -i '' 's/ class=\"reversefootnote\"//g' ${file}; done"
 end
 
 desc "Builds the site for deployment"
