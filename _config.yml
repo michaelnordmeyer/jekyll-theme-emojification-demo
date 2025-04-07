@@ -1,3 +1,4 @@
+## Jekyll settings
 # Remove URL for GitHub Pages plugin
 url: https://jekyll-theme-emojification.michaelnordmeyer.com
 # baseurl: "" # The subpath of the site, e.g. /blog
@@ -34,10 +35,17 @@ author:
   copyright: Copyright © Michael Nordmeyer
   license_link: https://raw.githubusercontent.com/michaelnordmeyer/jekyll-theme-emojification/main/LICENSE
 # date_format: "%b %-d, %Y" # default: "%Y-%m-%d"
-lang: en-US # default: en (is not by Jekyll, but used by many other plugins)
-# minify: true # default: false (jekyll-feed, jekyll-sitemap)
-# Social links are used in SEO meta headers
-social:
+feed: # Plugin settings jekyll-feed (built-in)
+  # excerpt_only: true # default: false (can be declared in front matter as well)
+  hide_generator: true # default: false
+  icon: feed.webp # filename, not full path. Optional, default: site.favicon
+  path: /feed.xml # default: /feed.xml (mandatory)
+  # path_xslt: /feed.xslt.xml # default: /feed.xslt.xml
+  posts_limit: 1000 # default: 10
+  title_separator: ": "
+lang: en-US # default: en (is not used by Jekyll, but by many other plugins)
+# minify: true # default: false (jekyll-feed, jekyll-sitemap built-in)
+social: # Social links are used in SEO meta headers (jekyll-seo-tag built-in)
   fediverse_creator: "@mnordmeyer@indieweb.social" # "@username@fediverse.example"
   links: # The first link will become the webmention `authn`
     - https://github.com/michaelnordmeyer
@@ -65,18 +73,6 @@ theme_settings:
   show_descriptions: true # default: false
   theme_color: yellowgreen # default: none (= no colors. If this CSS file is missing, there will be also no structural styling)
   webmention_url: https://webmention.io/jekyll-theme-emojification.michaelnordmeyer.com/webmention
-
-## Plugin settings jekyll-feed (built-in)
-feed:
-  # excerpt_only: true # default: false (can be declared in front matter as well)
-  hide_generator: true # default: false
-  icon: feed.webp # filename, not full path. optional, default: site.favicon
-  path: /feed.xml # default: /feed.xml (mandatory)
-  # path_xslt: /feed.xslt.xml # default: /feed.xslt.xml
-  posts_limit: 1000 # default: 10
-  title_separator: ": "
-
-## Plugin settings jekyll-seo-tag (built-in)
 
 ## https://jekyllrb.com/docs/configuration/front-matter-defaults/
 # Only works for all posts, but can work for a subset of pages
