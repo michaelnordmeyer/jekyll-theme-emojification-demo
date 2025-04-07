@@ -46,12 +46,16 @@ social:
     - https://indieweb.social/@mnordmeyer
 title_separator: " • " # default: " | "
 ## Custom theme settings
-favicon: yellowgreen.webp # filename, not full path. optional, is used by feeds as fallback and sitemap
+favicon: yellowgreen.webp # filename, not full path. Optional, is used by feeds as fallback and sitemap
 ## Custom theme settings to not overwrite anything from Jekyll or plugins
 theme_settings:
   # category_title_prefix: "" # default: "Category: "
+  # category_home_link_title: "" # default: "Category Home"
+  # category_home_link_aria_label: "" # default: "Category Home Link"
   category_feed_all_name: "All" # (mandatory, but can be "")
   # feed_filename: "feed.xml" # default: "feed.xml"
+  # home_link_title: "" # default: "Home"
+  # home_link_aria_label: "" # default: "Home Link"
   icon: 🌳
   # redirect_page_title: "Redirecting…" # default: "Redirecting…"
   # redirect_page_from: "Redirecting from" # default: "Redirecting from"
