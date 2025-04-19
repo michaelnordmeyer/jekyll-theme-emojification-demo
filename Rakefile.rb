@@ -16,7 +16,7 @@ task :default => ["build"]
 desc "Creates a draft from a template with an UUID"
 task :draft do
   puts "==> Creating draft..."
-  sh 'sed "s/uuid:/uuid: $(uuidgen)/" _drafts/_.md > _drafts/$(date +%Y-%m-%d_%H-%M-%S).md'
+  sh 'sed "s/uuid:/uuid: $(uuidgen)/" _drafts/_.md > _drafts/$(date +%Y-%m-%d-%H-%M-%S).md'
 end
 
 desc "Builds the robots.txt"
