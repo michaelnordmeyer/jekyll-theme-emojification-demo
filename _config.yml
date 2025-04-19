@@ -1,7 +1,7 @@
 ## Jekyll settings
 # Remove URL for GitHub Pages plugin
 url: https://jekyll-theme-emojification.michaelnordmeyer.com
-# baseurl: "" # The subpath of the site, e.g. /blog
+# baseurl: "/blog" # The subpath of the site, e.g. /blog
 title: Jekyll Theme Emojification
 # Description is used for meta headers and feeds. Limit to 160 characters, if possible
 description: >-
