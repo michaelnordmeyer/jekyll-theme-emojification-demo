@@ -2,7 +2,7 @@
 title: Header Images
 date: 2024-01-01 12:00 +0000
 description: Optional header images with `alt` and `title` attributes.
-image:
+featured_image:
   path: /images/2011/lanterns.webp
   alt: Paper lanterns in Kyoto at night
   title: Paper lanterns in Kyoto at night
@@ -21,7 +21,7 @@ This page’s relevant frontmatter:
 
 ```yaml
 ---
-image:
+featured_image:
   path: /images/2011/lanterns.webp
   alt: Paper lanterns in Kyoto at night
   title: Paper lanterns in Kyoto at night
