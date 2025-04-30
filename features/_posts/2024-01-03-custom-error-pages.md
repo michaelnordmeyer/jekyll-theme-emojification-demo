@@ -3,7 +3,7 @@ title: Custom Error Pages
 date: 2024-01-03 14:00 +0000
 description: Custom error pages can have custom emoji and colors.
 tags: ["Cool Feature"]
-permalink: /feature/custom-error-pages
+permalink: /features/custom-error-pages
 uuid: F05B8799-A6D5-4298-8C21-259E16C335CC
 icon: 🎏
 theme_color: gold

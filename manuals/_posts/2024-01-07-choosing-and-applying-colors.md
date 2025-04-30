@@ -2,7 +2,7 @@
 title: Choosing and Applying Colors
 date: 2024-01-07 21:00 +0000
 description: Only named colors and hex codes are supported
-permalink: /manual/choosing-and-applying-colors
+permalink: /manuals/choosing-and-applying-colors
 uuid: 4029A474-A526-40FC-84BF-6EC064408E38
 icon: 🎨
 theme_color: hotpink
@@ -74,4 +74,4 @@ Other ways of expressing HMTL colors are not supported, because the file naming 
 
 ### Favicons
 
-[Favicons should reflect the theme color](/feature/theme-colored-favicons).
+[Favicons should reflect the theme color](/features/theme-colored-favicons).
