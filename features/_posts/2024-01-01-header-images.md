@@ -1,6 +1,6 @@
 ---
 title: Header Images
-date: 2024-01-01 12:00 +0000
+date: 2024-01-01 12:00:00 +00:00
 description: Optional header images with `alt` and `title` attributes.
 featured_image:
   path: /images/2011/lanterns.webp

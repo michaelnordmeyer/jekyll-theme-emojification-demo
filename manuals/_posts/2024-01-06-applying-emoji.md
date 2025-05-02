@@ -1,6 +1,6 @@
 ---
 title: Applying Emoji
-date: 2024-01-06 20:00 +0000
+date: 2024-01-06 20:00:00 +00:00
 description: It’s just pasting an emoji in frontmatter.
 permalink: /manuals/applying-emoji
 uuid: A6B1F521-70B7-4CF1-8F94-6A56A55B9E51

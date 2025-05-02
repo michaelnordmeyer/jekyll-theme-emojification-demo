@@ -1,6 +1,6 @@
 ---
 title: Custom Error Pages
-date: 2024-01-03 14:00 +0000
+date: 2024-01-03 14:00:00 +00:00
 description: Custom error pages can have custom emoji and colors.
 tags: ["Cool Feature"]
 permalink: /features/custom-error-pages

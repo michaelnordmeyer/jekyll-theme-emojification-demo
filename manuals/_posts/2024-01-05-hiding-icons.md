@@ -1,6 +1,6 @@
 ---
 title: Hiding Icons
-date: 2024-01-05 19:00 +0000
+date: 2024-01-05 19:00:00 +00:00
 description: Hiding icons is an option.
 permalink: /manuals/hiding-icons
 uuid: 38E1A0BC-6F42-4287-8F54-797E87D9B9F3
