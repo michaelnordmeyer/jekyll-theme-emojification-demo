@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ## Deployment settings
-base_url = `yq '.url += .baseurl' _config.yml | grep -E '^url:' | cut -d' ' -f2 | cut -c9- | tr -d '\n'`
+base_url = `yq '.url += .baseurl' _config.yml | grep -E '^url:' | cut -d ' ' -f 2 | cut -c 9- | tr -d '\n'`
 if base_url == ""
   puts "Error: base_url cannot be determined"
   exit!(1)
@@ -70,14 +70,14 @@ end
 
 desc "Copies robots.txt to the server via scp"
 task :scprobots do
-  puts "==> Scp’ing #{base_url} robots.txt to SSH host #{ssh_domain}"
+  puts "==> Scp'ing #{base_url} robots.txt to SSH host #{ssh_domain}"
   sh "scp -P #{ssh_port} robots.txt #{ssh_user}@#{ssh_domain}:#{ssh_path}"
 end
 
 desc "Gzips the site via SSH"
 task :gzip do
   puts "==> Gzip'ing #{base_url} via SSH..."
-  sh "ssh -p #{ssh_port} #{ssh_user}@#{ssh_domain} 'for file in $(find #{ssh_path} -type f -name \"*.html\" -o -name \"*.css\" -o -name \"*.css.map\" -o -name \"*.js\" -o -name \"*.svg\" -o -name \"*.xml\" -o -name \"*.xsl\" -o -name \"*.xslt\" -o -name \"*.json\" -o -name \"*.txt\"); do printf . && gzip -kf \"${file}\"; done; echo'"
+  sh "ssh -p #{ssh_port} #{ssh_user}@#{ssh_domain} 'for file in $(find #{ssh_path} -type f -size +1400c -regex \".*\\.\\(css\\(\\.map\\)\\?\\|html\\|js\\|json\\|svg\\|txt\\|xml\\|xsl\\(t\\)\\?\\)$\"); do printf . && gzip -kf \"${file}\" && brotli -kf -q 4 \"${file}\"; done; echo'"
 end
 
 desc "Gzips robots.txt via SSH"

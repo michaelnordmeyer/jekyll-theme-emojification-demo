@@ -17,6 +17,7 @@ gem "jekyll", "~> 4.3"
 group :jekyll_plugins do
   gem "jekyll-include-cache", "~> 0.2"
   gem "jekyll-remote-theme", "~> 0.4"
+  gem "jekyll-redirect-from", "~> 0.16"
   gem "jekyll-theme-emojification" # No GitHub Pages gem, needs jekyll-remote-theme
 end
 
