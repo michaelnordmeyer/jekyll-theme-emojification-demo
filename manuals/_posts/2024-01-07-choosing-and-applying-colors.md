@@ -51,7 +51,7 @@ To have a defined color in frontmatter's `theme_color` or `_config.yml`’s `the
 
 ### Named Colors
 
-For named colors like “orange“, the file has to be named `orange.scss`. Create a directory called `assets` in your site’s root directory, and a subdirectory called `css`. In there create a file called `orange.scss`, and put the corresponding HSL colors in there:
+For named colors like “orange”, the file has to be named `orange.scss`. Create a directory called `assets` in your site’s root directory, and a subdirectory called `css`. In there create a file called `orange.scss`, and put the corresponding HSL colors in there:
 
 ```css
 ---
