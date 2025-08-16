@@ -23,7 +23,7 @@ desc 'Builds the robots.txt'
 task :robots do
   puts "==> Building #{base_url} robots.txt..."
   sh "printf 'Sitemap: https://#{base_url}/sitemap.xml\\n\\n' > robots.txt"
-  sh 'cat ../../../michaelnordmeyer.com/robots.txt >> robots.txt'
+  sh 'cat ../../robots.txt >> robots.txt'
 end
 
 desc 'Builds the feed icon'
@@ -71,7 +71,7 @@ end
 desc 'Copies robots.txt to the server via scp'
 task :scprobots do
   puts "==> Scp'ing #{base_url} robots.txt to SSH host #{ssh_domain}"
-  sh "scp -P #{ssh_port} robots.txt #{ssh_user}@#{ssh_domain}:#{ssh_path}"
+  sh "scp -P #{ssh_port} robots.txt #{ssh_user}@#{ssh_domain}:#{ssh_path}/"
 end
 
 desc 'Compresses the site via SSH'
