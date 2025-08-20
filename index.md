@@ -41,7 +41,7 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 - Pages
 - Fancy category pages (also on GitHub Pages, where additional plugins are not allowed)
 - A styled redirection page, which will be used by the optional plugin [Jekyll Redirect From](https://github.com/jekyll/jekyll-redirect-from)
-- Built-in feed and sitemap creation with styling (no dependency to jekyll-feed and jekyll-sitemap)
+- Built-in feed and sitemap creation (no dependency to jekyll-feed and jekyll-sitemap)
 - Theme-color matching favicons
 - Optional [colorful index pages](/index-colorful)
 - Header images

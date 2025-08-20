@@ -40,7 +40,6 @@ feed: # Plugin settings jekyll-feed (built-in)
   hide_generator: true # default: false
   icon: feed.webp # filename, not full path. Optional, default: site.favicon
   path: /feed.xml # default: /feed.xml (mandatory)
-  # path_xslt: /feed.xslt.xml # default: /feed.xslt.xml
   posts_limit: 1000 # default: 10
   title_separator: ": "
 lang: en-US # default: en (is not used by Jekyll, but by many other plugins)
