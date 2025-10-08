@@ -4,7 +4,7 @@ date: 2024-01-02 13:00:00 +00:00
 description: Post lists can have content warnings to hint privacy-violating video embeds.
 permalink: /features/video-content-warnings
 uuid: D336B548-70E2-41A8-B631-92306F05D8DE
-content_warnings: video
+content_warnings: [video]
 icon: ⚠️
 theme_color: gold
 ---
@@ -18,7 +18,7 @@ This page’s relevant frontmatter:
 
 ```yaml
 ---
-content_warnings: video
+content_warnings: [video]
 ---
 ```
 
