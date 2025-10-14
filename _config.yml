@@ -64,6 +64,7 @@ theme_settings:
   # home_link_title: "" # default: "Home"
   # home_link_aria_label: "" # default: "Home Link"
   icon: 🌳
+  # lang_direction: rtl # default: "ltr"
   # redirect_page_title: "Redirecting…" # default: "Redirecting…"
   # redirect_page_from: "Redirecting from" # default: "Redirecting from"
   # redirect_page_to: "to" # default: "to"
