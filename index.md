@@ -7,7 +7,7 @@ icon: 🧑‍🎨
 ---
 A simple and minimal single-author theme with configurable big emoji as the header link, and configurable background colors, which can be chosen for each post or page. [Sample craziness](/colors/).
 
-![Sample](/repo-card.png){: style="box-shadow: 5px 5px black;"}
+![Sample](/repo-card.webp){: loading="lazy" style="box-shadow: 5px 5px black;"}
 
 ## The Idea
 
@@ -50,7 +50,6 @@ I run the grey theme on [my home page](https://michaelnordmeyer.com/).
 - Hidden semantic info for embedding and SEO like [Open Graph](https://ogp.me/), [JSON-LD](https://json-ld.org/), and inline [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)). No need for the `jekyll-seo-tag` plugin
 - Minimal build and load times
 - Custom header and footer to add snippets
-- Basic [Webmention](https://indieweb.org/Webmention) support (needs third-party service like [Webmention.io](https://webmention.io) or additional server software), which allows subscribing to a feed of Webmentions, which are cross-site notifications
 
 ## Additional Features
 
