@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
-## Deployment settings
+## Build settings
+# -c 8- for insecure HTTP URLs
 base_url = `yq '.url += .baseurl' _config.yml | grep -E '^url:' | cut -d ' ' -f 2 | cut -c 9- | tr -d '\n'`
 if base_url == ''
   puts 'Error: base_url cannot be determined'
   exit!(1)
 end
+
+## Deployment settings
 ssh_domain = 'michaelnordmeyer.com'
 ssh_port = 1111
 ssh_user = 'root'
