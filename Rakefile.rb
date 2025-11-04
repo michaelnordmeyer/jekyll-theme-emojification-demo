@@ -12,7 +12,7 @@ end
 ssh_domain = 'michaelnordmeyer.com'
 ssh_port = 1111
 ssh_user = 'root'
-ssh_path = "/var/www/#{base_url}/"
+ssh_path = "/srv/#{base_url}/"
 
 task :default => ["build"]
 
